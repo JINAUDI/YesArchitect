@@ -12080,3 +12080,33 @@ body.project-detail-page #header-sticky .header-main .header-right .header-btn .
     transform: translateY(30px);
   }
 }
+
+/* Use the hamburger as the sole header action on every page. */
+.header-hero-nav .header-hero-contact,
+.header-hero-nav .header-main .header-right .header-btn > span {
+  display: none !important;
+}
+
+.header-hero-nav .header__hamburger {
+  display: block !important;
+}
+
+.header-hero-nav .header__hamburger .sidebar__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 38px;
+  border: 1px solid rgba(255, 250, 242, 0.45);
+  border-radius: 9px;
+  color: var(--white) !important;
+  font-size: 18px;
+}
+
+.brand-hero-cta {
+  gap: 0;
+}
+
+.brand-hero-cta span {
+  display: none;
+}
