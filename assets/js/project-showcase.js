@@ -19,7 +19,7 @@
         { src: "assets/img/inner-page/project-details-2.jpg", caption: "Interior planning detail", modifier: "is-tall" },
         { src: "assets/img/inner-page/project-details-3.jpg", caption: "Material and volume study", modifier: "is-tall" },
         { src: "assets/img/inner-page/project-1.jpg", caption: "Project overview", modifier: "" },
-        { src: "assets/img/home-3/work-1.webp", caption: "Hospitality composition", modifier: "is-wide" }
+        { src: "assets/img/home-3/work-1.jpg", caption: "Hospitality composition", modifier: "is-wide" }
       ]
     },
     {
@@ -35,7 +35,7 @@
         Services: "Interior planning and detail drawings"
       },
       images: [
-        { src: "assets/img/home-3/work-2.png", caption: "Hospitality interior concept", modifier: "is-large" },
+        { src: "assets/img/home-3/work-2.jpg", caption: "Hospitality interior concept", modifier: "is-large" },
         { src: "assets/img/inner-page/project-2.jpg", caption: "Project listing view", modifier: "is-tall" },
         { src: "assets/img/inner-page/project-details-2.jpg", caption: "Detail development", modifier: "is-tall" },
         { src: "assets/img/inner-page/news-details.jpg", caption: "Guest space mood", modifier: "" },
