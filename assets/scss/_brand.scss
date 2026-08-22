@@ -1,0 +1,21 @@
+.brand-section-2 {
+    .brand-text {
+        text-align: center;
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: $heading-font;
+        letter-spacing: 3px;
+        margin-bottom: 60px;
+    }
+
+    .brand-image {
+        text-align: center;
+        opacity: .4;
+        @include transition;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

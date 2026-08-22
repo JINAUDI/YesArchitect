@@ -1,0 +1,60 @@
+.cta-banner-box-items {
+    background-color: $white;
+    padding: 48px 48px;
+
+    @include breakpoint (max-md){
+        padding: 30px;
+    }
+
+    P {
+       margin-top: 18px;
+    }
+
+    ul {
+        margin-top: 40px;
+        margin-bottom: 50px;
+
+        li {
+            font-size: 24px;
+            @include flex;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+            padding-bottom: 20px;
+
+             @include breakpoint (max-md){
+                font-size: 20px;
+            }
+
+            span {
+                font-size: 18px;
+                margin-right: 16px;
+            }
+
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.banner-section-2 {
+
+    @include breakpoint (max-xl){
+        height: 500px;
+    }
+
+    img {
+        @include imgw;
+        object-fit: cover;
+    }
+}
+
+.cta-banner-section-3 {
+    position: relative;
+    z-index: 9;
+
+    &::before {
+        @include before;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+}

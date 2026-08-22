@@ -1,0 +1,4 @@
+codex-local-server.*
+local-server.*
+server-*.log
+server-*.pid

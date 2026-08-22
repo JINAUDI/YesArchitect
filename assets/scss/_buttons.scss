@@ -1,0 +1,350 @@
+//>>>>> Component Button Here <<<<<//
+.theme-btn {
+    gap: 6px;
+    display: inline-flex;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 0 28px;
+	background-color: $theme-color;
+    color: $white;
+    align-items: center;
+    border-radius: 100px;
+    justify-content: center;
+    transition: background 0.3s ease;
+    cursor: pointer;
+	font-family: $body-font;
+	height: 58px;
+	line-height: 58px;
+
+	 .text {
+		z-index: 1;
+		position: relative;
+		display: inline-flex;
+		transition: all 0.2s;
+
+		span {
+		opacity: 1;
+		min-width: 4px;
+		transition: none;
+		font-weight: 500;
+		display: inline-block;
+		letter-spacing: -0.8px;
+		transform: translateX(0) scale(1);
+		}
+	}
+
+	  &:hover {
+
+    .text {
+      span {
+        opacity: 0;
+        transition: none;
+        transform: translateX(-10px) scale(1.2);
+      }
+
+      span.animate {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+        transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease;
+      }
+    }
+  }
+}
+
+
+.theme-btn-2 {
+    position: relative;
+    overflow: hidden;
+    text-transform: capitalize;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px;
+
+    .icon-left {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: $theme-color;
+        color: $white;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        -webkit-transition: all 300ms ease;
+        transition: all 300ms ease;
+    }
+
+    .icon-right {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: $theme-color;
+        color: $white;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        -webkit-transition: all 300ms ease;
+        transition: all 300ms ease;
+    }
+
+    .icon-left {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      width: 0;
+      opacity: 0;
+      margin-left: -8px;
+    }
+
+    .btn-title {
+      transform: translateX(0px);
+      -webkit-transition: all 300ms ease;
+      transition: all 300ms ease;
+      font-size: 18px;
+      font-weight: 500;
+       letter-spacing: -0.02em;
+       font-family: $heading-font;
+       font-style: italic;
+       text-transform: capitalize;
+    }
+
+    &:hover {
+      .icon-left {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        width: 30px;
+        opacity: 1;
+        margin-left: 0;
+      }
+
+      .btn-title {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+      }
+
+      .icon-right {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        width: 0;
+        opacity: 0;
+      }
+    }
+}
+
+//>>>>> Component Button End <<<<<//
+
+
+@keyframes slideRight {
+    49% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    50% {
+      opacity: 0;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+    51% {
+      opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    49% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+    50% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+    51% {
+      opacity: 1;
+    }
+}
+
+.text-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 24px;
+      font-weight: 500;
+      font-family: $heading-font;
+      color: $header-color;
+      overflow: hidden;
+      text-transform: capitalize;
+      letter-spacing: -0.02em;
+      font-style: italic;
+      text-decoration: underline;
+
+  .text {
+      position: relative;
+      display: inline-block;
+      height: 28px;
+      overflow: hidden;
+  }
+
+  .text-default,
+  .text-hover {
+      display: block;
+      transition: transform 0.4s ease;
+  }
+
+  .text-hover {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      color: $theme-color;
+      font-family: $heading-font;
+      color: $header-color;
+      overflow: hidden;
+      text-transform: capitalize;
+      letter-spacing: -0.02em;
+      font-style: italic;
+      text-decoration: underline;
+  }
+
+  &:hover {
+      .text-default {
+          transform: translateY(-120%);
+      }
+
+      .text-hover {
+          transform: translateY(-120%);
+      }
+  }
+
+  i {
+      transition: transform 0.4s ease;
+  }
+
+  }
+.gt-theme-btn-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  transition: all 0.4s ease;
+  text-transform: capitalize;
+
+ 
+
+  &:hover {
+    .gt-theme-btn-arrow-left {
+      scale: 1;
+    }
+
+    .gt-theme-btn-arrow-right {
+      scale: 0;
+    }
+
+    .gt-theme-btn {
+      transform: translateX(56px);
+    }
+  }
+
+  .gt-theme-btn-arrow-left,
+  .gt-theme-btn-arrow-right {
+    width: 53px;
+    height: 53px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: $theme-color;
+    color: $white;
+    border-radius: 50%;
+    transition: 0.4s;
+    text-align: center;
+
+	@include breakpoint (max-sm){
+		width: 48px;
+		height: 48px;
+	}
+  }
+
+  .gt-theme-btn-arrow-left {
+    scale: 0;
+    position: absolute;
+    left: 3px;
+  }
+
+  .gt-theme-btn {
+    background: $theme-color;
+    color: $white;
+    font-weight: 500;
+    font-size: 18px;
+	 padding: 14px 28px;
+    display: inline-flex;
+	font-family: $body-font;
+    align-items: center;
+    gap: 30px;
+    border-radius: 40px;
+    transition: 0.4s;
+
+	@include breakpoint (max-sm){
+		font-size: 14px;
+    	padding: 10px 25px;
+	}
+  }
+
+  &:hover {
+	.gt-theme-btn {
+		background-color: $header-color;
+	}
+
+	.gt-theme-btn-arrow-left,
+  	.gt-theme-btn-arrow-right {
+		background-color: $header-color;
+	}
+  }
+
+
+  &.bg-white-style {
+      .gt-theme-btn-arrow-left,
+        .gt-theme-btn-arrow-right {
+          background: white;
+          color: $header-color;
+      }
+
+      .gt-theme-btn {
+        background: white;
+          color: $header-color;
+      }
+    }
+  
+
+  &.bg-2 {
+    .gt-theme-btn-arrow-left,
+      .gt-theme-btn-arrow-right {
+        background: rgba(0, 0, 0, 0.1);
+        color: $header-color;
+    }
+
+    .gt-theme-btn {
+       background: rgba(0, 0, 0, 0.1);
+        color: $header-color;
+    }
+  }
+}

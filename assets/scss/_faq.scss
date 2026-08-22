@@ -1,0 +1,142 @@
+.faq-wrapper-3 {
+    .accordion-box-3 {
+        position: relative;
+        border: none;
+        .block {
+            position: relative;
+            background-color: transparent;
+            line-height: 1;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 27px;
+            margin-bottom: 20px;
+
+            .acc-btn {
+                position: relative;
+                font-size: 24px;
+                color: $header-color;
+                font-weight: 500;
+                font-family: $heading-font;
+                cursor: pointer;
+                -webkit-transition: all 500ms ease;
+                transition: all 500ms ease;
+
+                @include breakpoint (max-xxl){
+                    padding-right: 40px;
+                    line-height: 1.4;
+                    font-size: 20px;
+                }
+
+                @include breakpoint (max-xxs){
+                    font-size: 18px;
+                }
+
+
+                .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    -webkit-transition: all 500ms ease;
+                    transition: all 500ms ease;
+                    border-radius: 50%;
+                    color: $header-color;
+                    text-align: center;
+                    font-size: 16px;
+                }
+            }
+
+            .acc-content {
+                position: relative;
+                display: none;
+                margin-top: 22px;
+
+                @include breakpoint (max-xxs){
+                    margin-top: 10px;
+                }
+
+                .content {
+                    position: relative;
+
+                    .text {
+                        line-height: 175%;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #000000;
+                        opacity: 0.7;
+                        max-width: 842px;
+
+                        @include breakpoint (max-xl){
+                            font-size: 14px;
+                        }
+
+                        @include breakpoint (max-xxs){
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .accordion-box-3 .block .acc-content.current {
+        display: block;
+    }
+
+    .accordion-box-3 .block .acc-btn.active .icon:before {
+        content: "\f068";
+        color: $header-color;
+    }
+
+    .accordion-box-3 .block .acc-btn.active {
+        color: $header-color;
+    }
+
+    .accordion-box-3 .block:last-child {
+        margin-bottom: 0;
+    }
+
+    .faq-content {
+        margin-left: 20px;
+
+         @include breakpoint (max-xxl) {
+            margin-left: 0;
+        }
+
+        .faq-image {
+            margin-left: 200px;
+            margin-top: 130px;
+            position: relative;
+            z-index: 9;
+
+             @include breakpoint (max-xxl) {
+                margin-left: 0;
+                margin-top: 30px;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                top: -20px;
+                left: -20px;
+                z-index: -1;
+
+                @include breakpoint (max-xxl) {
+                    display: none;
+                }
+            }
+
+            img {
+                @include imgw;
+            }
+        }
+    }
+}
+
+.faq-section-3 {
+    .container {
+        max-width: 1410px;
+    }
+}

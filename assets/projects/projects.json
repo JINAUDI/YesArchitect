@@ -1,0 +1,95 @@
+{
+  "instructions": "Each project folder uses numbered images. Image 1 is the cover/detail hero. Every numbered image after 1 is shown in the project detail gallery.",
+  "projects": [
+    {
+      "key": "atlantis",
+      "folder": "Atlantis",
+      "title": "Atlantis",
+      "category": "Project",
+      "location": "",
+      "meta": ["Project", "Architecture", "Interior"],
+      "summary": "",
+      "scope": ["Architecture", "Interior Design", "Drawing Development"],
+      "info": {
+        "Project": "Atlantis",
+        "Sector": "Project",
+        "Location": "To be updated",
+        "Services": "Architecture, interiors and drawings"
+      },
+      "featuredHome": true,
+      "images": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp", "7.webp", "8.webp", "9.webp", "10.webp", "11.webp", "12.webp"]
+    },
+    {
+      "key": "barsana-resort",
+      "folder": "Barsana Resort",
+      "title": "Barsana Resort",
+      "category": "Resort Project",
+      "location": "",
+      "meta": ["Resort", "Architecture", "Interior"],
+      "summary": "",
+      "scope": ["Architecture", "Interior Design", "Drawing Development"],
+      "info": {
+        "Project": "Barsana Resort",
+        "Sector": "Resort",
+        "Location": "To be updated",
+        "Services": "Architecture, interiors and drawings"
+      },
+      "featuredHome": true,
+      "images": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp", "7 .webp", "8.webp", "9.webp", "10.webp", "11.webp", "12.webp", "13.webp"]
+    },
+    {
+      "key": "residential-project",
+      "folder": "Residential Project",
+      "title": "Residential Project",
+      "category": "Residential Project",
+      "location": "",
+      "meta": ["Residential", "Architecture", "Interior"],
+      "summary": "",
+      "scope": ["Residential Planning", "Architecture", "Interior Design", "Drawing Development"],
+      "info": {
+        "Project": "Residential Project",
+        "Sector": "Residential",
+        "Location": "To be updated",
+        "Services": "Architecture, interiors and drawings"
+      },
+      "featuredHome": true,
+      "images": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp", "7.webp", "8.webp", "9.webp", "10.webp", "11.webp"]
+    },
+    {
+      "key": "zoa",
+      "folder": "Zoa",
+      "title": "Zoa",
+      "category": "Project",
+      "location": "",
+      "meta": ["Project", "Architecture", "Interior"],
+      "summary": "",
+      "scope": ["Architecture", "Interior Design", "Drawing Development"],
+      "info": {
+        "Project": "Zoa",
+        "Sector": "Project",
+        "Location": "To be updated",
+        "Services": "Architecture, interiors and drawings"
+      },
+      "featuredHome": true,
+      "images": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp", "7.webp", "8.webp", "9.webp", "10.webp", "11.webp"]
+    },
+    {
+      "key": "zeest",
+      "folder": "Zeest",
+      "title": "Zeest",
+      "category": "Project",
+      "location": "",
+      "meta": ["Project", "Architecture", "Interior"],
+      "summary": "",
+      "scope": ["Architecture", "Interior Design", "Drawing Development"],
+      "info": {
+        "Project": "Zeest",
+        "Sector": "Project",
+        "Location": "To be updated",
+        "Services": "Architecture, interiors and drawings"
+      },
+      "featuredHome": false,
+      "images": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp", "7.webp", "8.webp", "9.webp", "10.webp", "11.webp", "12.webp", "13.webp", "14.webp", "15.webp"]
+    }
+  ]
+}

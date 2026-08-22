@@ -1,0 +1,412 @@
+.testimonial-box-items {
+    background-color: $white;
+    padding: 32px;
+    margin-top: 30px;
+
+    .tetsi-top {
+        @include flex;
+        justify-content: space-between;
+        border-top: 1px solid rgba(8, 37, 36, 0.2);
+        border-bottom: 1px solid rgba(8, 37, 36, 0.2);
+        padding: 16px 0;
+
+        .client-info {
+            @include flex;
+            gap: 10px;
+
+            span {
+                font-size: 20px;
+                font-weight: 600;
+                color: #0D1D18;
+            }
+        }
+
+        .star {
+            font-weight: 700;
+            color: $white;
+            background-color: $theme-color;
+            height: 33px;
+            line-height: 33px;
+            border-radius: 6px;
+            padding: 0 11px;
+            display: inline-block;
+        }
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 35px;
+    }
+
+    .text {
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 18px;
+
+        @include breakpoint (max-xxl){
+            font-size: 16px;
+        }
+    }
+}
+
+.testimonial-wrapper-2 {
+    .testimonial-items-2 {
+        .testi-box-2 {
+            margin-top: 70px;
+
+            .quote-icon {
+                margin-bottom: 30px;
+            }
+
+             p {
+                font-size: 28px;
+                letter-spacing: -0.03em;
+                text-transform: capitalize;
+                font-weight: 500;
+                font-family: $heading-font;
+                color: #000000;
+                font-style: italic;
+                line-height: 150%;
+
+                @include breakpoint (max-sm){
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .array-button {
+            gap: 15px;
+            margin-top: 48px;
+
+            .array-prev,.array-next {
+                width: 44px;
+                height: 44px;
+                line-height: 44px;
+                border: none;
+                background-color: $white;
+
+                &:hover {
+                    background-color: $theme-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .testimonial-right-items {
+        padding: 30px;
+        position: relative;
+
+        .testimonial-client-slider {
+            margin-right: -45%;
+
+            @include breakpoint (max-xl){
+                margin-right: 0;
+            }
+
+            @include breakpoint (max-xxs){
+                text-align: center;
+            }
+        }
+
+        .testi-slider-box {
+            opacity: .1;
+        }
+
+        &::before {
+            position: absolute;
+            @include before;
+            background-color: $white;
+            width: 1000%;
+            z-index: -1;
+        }
+
+        .client-image {
+            margin-top: 85px;
+        }
+
+        .info-content {
+            margin-top: 30px;
+
+            .name {
+                font-size: 24px;
+                font-weight: 500;
+            }
+
+            p {
+                text-transform: capitalize;
+                font-size: 14px;
+            }
+
+        }
+
+        .number-item {
+            @include flex;
+            gap: 8px;
+            margin-top: 105px;
+
+            @include breakpoint (max-xxs){
+               justify-content: center;
+            }
+
+            p {
+                font-size: 14px;
+                color: #6D6D6D;
+            }
+
+            span {
+                color: $header-color;
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            .line {
+                height: 1px;
+                width: 96px;
+                background-color: $header-color;
+                margin-left: 15px;
+            }
+        }
+
+        .swiper-slide.swiper-slide-active{
+            .testi-slider-box {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.testimonial-box-items-6 {
+    padding: 30px;
+    border: 3px solid rgba(2, 21, 36, 0.2);
+    border-radius: 10px;
+    @include flex;
+    gap: 40px;
+    border-radius: 10px;
+
+    @include breakpoint (max-xxl){
+        display: block;
+        padding: 30px;
+    }
+
+    @include breakpoint (max-xxs){
+        padding: 24px;
+    }
+
+    .thumb {
+        max-width: 335px;
+        position: relative;
+
+        @include breakpoint (max-xxl){
+            max-width: initial;
+            height: 500px;
+        }
+
+        @include breakpoint (max-sm){
+            height: initial;
+        }
+
+        img {
+            @include imgw;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .info-title {
+            background-color: #F5F5F5;
+            padding: 16px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            
+            h2 {
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: capitalize;
+                color: $header-color;
+            }
+
+            span {
+                color: #7E7E7E;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .content {
+        max-width: 738px;
+
+        @include breakpoint (max-xxl){
+            margin-top: 20px;
+        }
+
+        @include breakpoint (max-xxs){
+            padding: 0px;
+        }
+
+        p {
+            font-size: 21px;
+            font-weight: 500;
+            color: #021524;
+            text-transform: capitalize;
+            line-height: 187%;
+            margin-top: 40px;
+
+            @include breakpoint (max-xxl){
+                font-size: 16px;
+                margin-top: 30px;
+            }
+
+            @include breakpoint (max-lg){
+                font-size: 18px;
+            }
+
+                @include breakpoint (max-xxs){
+                font-size: 16px;
+            }
+        }
+
+        .clutech-image {
+            margin-top: 60px;
+            @include flex;
+            justify-content: space-between;
+            gap: 400px;
+
+            @include breakpoint (max-xxl){
+                margin-top: 30px;
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+
+            .dot-number {
+                display: flex;
+                gap: 55px;
+                
+                .swiper-pagination-bullet {
+                    background: none !important; 
+                    width: auto !important;
+                    height: auto !important;
+                    margin: 0 !important;
+                    @include transition;
+                    color: $white;
+                }
+
+                .swiper-pagination-bullet-active {
+                    .dot-num {
+                        span {
+                            color: #021524 !important;
+                            font-size: 15px;
+                            font-weight: 500;
+                            @include transition;
+                            display: inline-block;
+                        }
+                    }
+                }
+
+                .dot-num {
+                    @include transition;
+                    
+                    span {
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: #021524 !important;
+                        @include transition;
+                        opacity: 9 !important;
+                        display: inline-block;
+                        
+
+                        &.style-2 {
+                            position: relative;
+
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                top: 14px;
+                                left: -49px;
+                                background: #021524;
+                                width: 43px;
+                                height: 1px;
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+    }
+}
+
+.testimonial-section-3 {
+    background-color: rgba(255, 246, 239, 1);
+
+    .testi-slider {
+        margin-right: -84%;
+
+        @include breakpoint (max-xxl) {
+            margin-right: 0;
+        }
+    }
+
+    .marquee-2 {
+        position: relative;
+        --duration: 20s;
+        --gap: 0px;
+        display: flex;
+        overflow: hidden;
+        user-select: none;
+        gap: 0;
+       margin-bottom: 60px;
+       margin-left: 60px;
+
+       @include breakpoint (max-xxl) {
+        margin-left: 0;
+        margin-bottom: 30px;
+       }
+       
+        &.slide-right {
+            transform: scaleX(-1);
+
+            .text,
+            .stroke-text {
+              transform: scaleX(-1);
+            }
+        }
+
+
+        .marquee-group {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            // justify-content: space-around;
+            gap: 30px;
+            // min-width: 100%;
+            animation: scroll var(--duration) linear infinite;
+            padding-right: 30px;
+        }
+
+        .text {
+            color: $white;
+            font-weight: 700;
+            font-size: 200px;
+            text-transform: uppercase;
+            @include flex;
+            gap: 50px;
+            line-height: 150px;
+            color: #000000;
+
+            @include breakpoint (max-xl){
+                gap: 30px;
+                font-size: 150px;
+            }
+
+            @include breakpoint (max-sm){
+                gap: 30px;
+                font-size: 100px;
+                line-height: 110px;
+            }
+        }
+    }
+}

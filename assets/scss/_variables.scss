@@ -1,0 +1,30 @@
+
+:root {
+    
+    --body: #f3f0ea;
+    --black: #16191c;
+    --white: #fffaf2;
+    --theme: #71999c;
+    --header: #222735;
+    --text: #344245;
+    --border: #d9d7ce;
+    --bg: #2d3244;
+    --brand-paper: #f3f0ea;
+    --brand-teal: #71999c;
+    --brand-teal-dark: #557d80;
+    --brand-slate: #2d3244;
+    --brand-wine: #21161d;
+    --brand-earth: #463c2b;
+    --box-shadow: 0px 18px 48px 0px rgba(32, 39, 48, 0.14);
+}
+
+// Theme Color - Defualt Colors
+$body-bg: var(--body);
+$black: var(--black);
+$white: var(--white);
+$theme-color: var(--theme);
+$text-color: var(--text);
+$header-color: var(--header);
+$border-color: var(--border);
+$bg-color: var(--bg);
+$shadow: var(--box-shadow);
