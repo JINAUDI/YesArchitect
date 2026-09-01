@@ -12111,6 +12111,207 @@ body.project-detail-page #header-sticky .header-main .header-right .header-btn .
   display: none;
 }
 
+/* Editorial project index: text-led rows with a dominant architectural image. */
+.project-inner-section:has(.project-editorial-list) {
+  background: var(--brand-paper);
+  padding-top: 0;
+}
+
+.project-editorial-list {
+  display: block;
+}
+
+.project-editorial-item {
+  display: grid;
+  grid-template-columns: minmax(360px, 0.92fr) minmax(0, 1.48fr);
+  min-height: 650px;
+  padding: 54px 0 66px;
+  border-top: 1px solid rgba(45, 50, 68, 0.2);
+  gap: clamp(44px, 7vw, 110px);
+}
+
+.project-editorial-item:last-child {
+  border-bottom: 1px solid rgba(45, 50, 68, 0.2);
+}
+
+.project-editorial-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 42px 0 0;
+}
+
+.project-editorial-index {
+  color: var(--yes-brand);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.project-editorial-copy h2 {
+  max-width: 520px;
+  margin: 72px 0 0;
+  color: var(--brand-wine);
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(56px, 6vw, 96px);
+  font-weight: 400;
+  letter-spacing: -0.065em;
+  line-height: 0.9;
+}
+
+.project-editorial-copy h2 a {
+  color: inherit;
+}
+
+.project-editorial-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 38px;
+  padding: 0;
+  margin: 54px 0 0;
+}
+
+.project-editorial-meta li {
+  list-style: none;
+  color: var(--yes-brand);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.project-editorial-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 50px;
+  margin-top: auto;
+  padding: 0 16px 0 30px;
+  border: 1px solid var(--brand-wine);
+  color: var(--brand-wine);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.project-editorial-button span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--brand-wine);
+  color: var(--white);
+  font-size: 16px;
+}
+
+.project-editorial-button:hover {
+  background: var(--brand-wine);
+  color: var(--white);
+}
+
+.project-editorial-visual {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 130px;
+  align-items: end;
+  gap: 24px;
+  min-width: 0;
+}
+
+.project-editorial-main-image {
+  width: 100%;
+  height: 100%;
+  min-height: 560px;
+  display: block;
+  object-fit: cover;
+}
+
+.project-editorial-support {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 8px;
+}
+
+.project-editorial-support img {
+  width: 100%;
+  height: 180px;
+  display: block;
+  object-fit: cover;
+}
+
+.project-editorial-support span {
+  color: var(--brand-slate);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+
+@media (max-width: 991px) {
+  .project-editorial-item {
+    grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+    gap: 32px;
+  }
+
+  .project-editorial-copy h2 {
+    margin-top: 54px;
+    font-size: clamp(48px, 7vw, 72px);
+  }
+
+  .project-editorial-visual {
+    grid-template-columns: minmax(0, 1fr) 92px;
+  }
+
+  .project-editorial-main-image {
+    min-height: 480px;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-editorial-item {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    padding: 34px 0 44px;
+    gap: 34px;
+  }
+
+  .project-editorial-copy {
+    padding-top: 0;
+  }
+
+  .project-editorial-copy h2 {
+    margin-top: 34px;
+    font-size: clamp(48px, 15vw, 72px);
+  }
+
+  .project-editorial-meta {
+    margin-top: 28px;
+  }
+
+  .project-editorial-button {
+    margin-top: 34px;
+  }
+
+  .project-editorial-visual {
+    grid-template-columns: minmax(0, 1fr) 76px;
+    gap: 14px;
+  }
+
+  .project-editorial-main-image {
+    min-height: 420px;
+  }
+
+  .project-editorial-support img {
+    height: 120px;
+  }
+}
+
 /* Keep the horizontal process panels inside the viewport at every breakpoint. */
 .home-process-section > .container {
   overflow: hidden;

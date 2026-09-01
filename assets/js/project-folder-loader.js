@@ -155,20 +155,32 @@
       return;
     }
 
-    list.innerHTML = projects.map(function (project) {
+    list.className = "project-editorial-list";
+    list.innerHTML = projects.map(function (project, index) {
       var cover = getCover(project);
+      var detailImage = project.images && project.images[1] ? project.images[1] : cover;
+      var location = project.info && project.info.Location && project.info.Location !== "To be updated"
+        ? project.info.Location
+        : (project.meta && project.meta[1]) || project.category;
       return [
-        "<div class=\"col-xl-4 col-lg-6 col-md-6\">",
-        "  <div class=\"project-inner-items\">",
-        "    <div class=\"project-image\">",
-        "      <img src=\"" + escapeHtml(cover.src) + "\" alt=\"" + escapeHtml(project.title) + "\">",
-        "      <div class=\"project-content\">",
-        "        <h2><a href=\"project-details.html?project=" + escapeHtml(project.key) + "\">" + escapeHtml(project.title) + "</a></h2>",
-        "        <span>" + escapeHtml(project.category) + "</span>",
-        "      </div>",
+        "<article class=\"project-editorial-item\">",
+        "  <div class=\"project-editorial-copy\">",
+        "    <span class=\"project-editorial-index\">/" + String(index + 1).padStart(2, "0") + "/</span>",
+        "    <h2><a href=\"project-details.html?project=" + escapeHtml(project.key) + "\">" + escapeHtml(project.title) + "</a></h2>",
+        "    <ul class=\"project-editorial-meta\">",
+        "      <li>" + escapeHtml(project.category) + "</li>",
+        "      <li>" + escapeHtml(location) + "</li>",
+        "    </ul>",
+        "    <a class=\"project-editorial-button\" href=\"project-details.html?project=" + escapeHtml(project.key) + "\">View Project <span aria-hidden=\"true\">&#x2197;</span></a>",
+        "  </div>",
+        "  <div class=\"project-editorial-visual\">",
+        "    <img class=\"project-editorial-main-image\" src=\"" + escapeHtml(cover.src) + "\" alt=\"" + escapeHtml(project.title) + " project exterior\">",
+        "    <div class=\"project-editorial-support\">",
+        "      <img src=\"" + escapeHtml(detailImage.src) + "\" alt=\"" + escapeHtml(project.title) + " supporting view\">",
+        "      <span>" + String(index + 1).padStart(2, "0") + " / Selected work</span>",
         "    </div>",
         "  </div>",
-        "</div>"
+        "</article>"
       ].join("");
     }).join("");
   }
