@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Yes Architect and Interiors">
+    <meta name="description" content="Service details from Yes Architect and Interiors.">
+    <title>Service Details - Yes Architect and Interiors</title>
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .service-detail-page { background: #f5f2ec; color: #102a43; }
+        .service-detail-nav { background: #292725; padding: 18px 0; }
+        .service-detail-nav .navbar-brand img { max-height: 48px; width: auto; }
+        .service-detail-nav a { color: #f7f3ed; text-decoration: none; margin-left: 28px; font-weight: 600; }
+        .service-detail-nav a:hover { color: #b5c7c6; }
+        .service-detail-hero { padding: 120px 0 90px; background: #eee9e1; }
+        .service-detail-kicker { color: #738f91; text-transform: uppercase; letter-spacing: .18em; font-size: 13px; font-weight: 700; }
+        .service-detail-hero h1 { max-width: 850px; margin: 18px 0 22px; color: #102a43; font-size: clamp(42px, 6vw, 82px); line-height: 1.03; }
+        .service-detail-tagline { max-width: 700px; font-size: 24px; line-height: 1.4; }
+        .service-detail-main { padding: 90px 0 110px; }
+        .service-detail-panel { height: 100%; padding: 42px; background: #fffaf2; border: 1px solid #dfd8cd; }
+        .service-detail-panel h2 { margin-bottom: 20px; color: #102a43; font-size: 30px; }
+        .service-detail-panel p { font-size: 17px; line-height: 1.8; margin-bottom: 0; }
+        .service-detail-scope { margin: 0; padding: 0; list-style: none; }
+        .service-detail-scope li { padding: 14px 0 14px 28px; border-bottom: 1px solid #dfd8cd; position: relative; line-height: 1.5; }
+        .service-detail-scope li::before { content: '\f054'; font-family: 'Font Awesome 6 Pro'; position: absolute; left: 0; top: 17px; color: #738f91; font-size: 12px; }
+        .service-detail-process { margin-top: 48px; padding-top: 34px; border-top: 1px solid #cfc7bb; }
+        .service-detail-process h2 { margin-bottom: 22px; }
+        .service-detail-steps { display: flex; flex-wrap: wrap; gap: 12px; margin: 0; padding: 0; list-style: none; }
+        .service-detail-steps li { padding: 14px 18px; background: #e5e0d7; border-radius: 30px; font-weight: 600; }
+        .service-detail-footer { padding: 28px 0; background: #292725; color: #f7f3ed; }
+        @media (max-width: 767px) { .service-detail-nav a { margin-left: 12px; font-size: 13px; } .service-detail-hero { padding: 85px 0 65px; } .service-detail-main { padding: 55px 0 70px; } .service-detail-panel { padding: 28px; } }
+    </style>
+</head>
+<body class="service-detail-page">
+    <header class="service-detail-nav">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a class="navbar-brand m-0" href="index.html"><img src="assets/img/logo/yes-logo-black.png" alt="Yes Architect and Interiors"></a>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="service.html">Services</a>
+                <a href="project.html">Projects</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="service-detail-hero">
+            <div class="container">
+                <span class="service-detail-kicker">Our Services / Service Detail</span>
+                <h1 id="service-title">Architectural Design</h1>
+                <p class="service-detail-tagline" id="service-tagline"></p>
+            </div>
+        </section>
+
+        <section class="service-detail-main">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <article class="service-detail-panel">
+                            <h2>Our Philosophy</h2>
+                            <p id="service-philosophy"></p>
+                        </article>
+                    </div>
+                    <div class="col-lg-6">
+                        <article class="service-detail-panel">
+                            <h2>Our Approach</h2>
+                            <p id="service-approach"></p>
+                        </article>
+                    </div>
+                    <div class="col-lg-7">
+                        <article class="service-detail-panel">
+                            <h2>What We Deliver</h2>
+                            <ul class="service-detail-scope" id="service-scope"></ul>
+                        </article>
+                    </div>
+                    <div class="col-lg-5">
+                        <article class="service-detail-panel">
+                            <h2>Start a Project</h2>
+                            <p>Tell us about your space, requirements, and ambitions. We will help shape the right design pathway for you.</p>
+                            <a class="gt-theme-btn-main mt-4" href="contact.html"><span class="gt-theme-btn">Talk to YES</span><span class="gt-theme-btn-arrow-right"><i class="fa-solid fa-arrow-up-right"></i></span></a>
+                        </article>
+                    </div>
+                </div>
+                <div class="service-detail-process">
+                    <h2>Execution Process</h2>
+                    <ol class="service-detail-steps" id="service-process"></ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="service-detail-footer">
+        <div class="container d-flex flex-wrap justify-content-between gap-3">
+            <span>© 2026 Yes Architect and Interiors. All rights reserved.</span>
+            <span>Jaipur, Rajasthan · +91 9828135409</span>
+        </div>
+    </footer>
+
+    <script>
+        const services = {
+            'architectural-design': {
+                title: 'Architectural Design', tagline: 'Spaces Designed for Life — Built with Purpose & Precision',
+                philosophy: 'We believe architecture should do more than just look good; it should enhance how you live, breathe, and function in your space.',
+                approach: 'By blending climate-responsive design, space efficiency, and structural integrity, we turn raw land into thoughtful, sustainable environments.',
+                scope: ['Conceptual Planning & Space Optimization', '2D Architectural Working Drawings & Elevation Designs', '3D Exterior Renderings & Walkthroughs', 'Structural, Electrical & Plumbing (MEP) Layouts', 'Municipal Approval Drawings & Bylaws Compliance'],
+                process: ['Site Survey', 'Concept & Layout Approval', '3D Exterior Elevation', 'Final Execution Drawings']
+            },
+            'interior-design': {
+                title: 'Interior Design', tagline: 'Interior Environments That Reflect Who You Are',
+                philosophy: "A great interior isn't about filling rooms with luxury—it's about crafting a personal sanctuary that feels effortless, comfortable, and uniquely yours.",
+                approach: 'We balance visual aesthetics with spatial utility, using tailored material selection, ergonomic layouts, and custom lighting.',
+                scope: ['Space Planning & Furniture Layouts', 'Mood Boards, Color Palettes & Material Selection', 'Photorealistic 3D Interior Views', 'False Ceiling, Lighting & Electrical Drawings', 'Custom Furniture, Joinery & Millwork Details'],
+                process: ['Requirement Mapping', 'Space Layout', '3D Renderings & Material Selection', 'Detailed Working Drawings']
+            },
+            'integrated-design': {
+                title: 'Integrated Design (Architecture + Interiors)', tagline: 'One Unified Vision — Inside and Out',
+                philosophy: "When a building’s exterior structure and interior flow don't align, spaces feel disconnected and execution gets messy.",
+                approach: 'We design the architecture and interiors as one continuous narrative, ensuring zero design clashes and a completely harmonious space.',
+                scope: ['Complete Exterior Architecture + Interior Space Design', 'Integrated Structural & Lighting Layouts', 'Uniform Material & Color Palette for Exterior & Interior', 'Complete Working Drawings Package (Architectural + Interior MEP)', 'End-to-End Design Coordination'],
+                process: ['Master Planning', 'Integrated 2D Layouts', 'Exterior & Interior 3D Design', 'Unified Execution Package']
+            },
+            'turnkey-solutions': {
+                title: 'Turnkey Solutions', tagline: 'From Blank Canvas to Key Handover — Totally Stress-Free',
+                philosophy: 'Building or renovating your property should be an exciting journey, not a daily headache of dealing with contractors, delays, and budget leaks.',
+                approach: 'We act as your single point of responsibility—managing site teams, material quality, timelines, and budgets from start to finish.',
+                scope: ['End-to-End Civil Construction & Interior Execution', 'Material Procurement & Quality Inspections', 'On-Site Supervision, Safety & Labor Management', 'Project Timeline & BOQ (Budget) Tracking', 'Final Site Deep Cleaning & Key Handover'],
+                process: ['Approved Drawings & Budgeting', 'Contracting & Site Preparation', 'Execution & Quality Checks', 'On-Time Handover']
+            },
+            'hospitality-planning-design': {
+                title: 'Hospitality Planning & Design', tagline: 'Commercial Spaces Engineered for Unforgettable Guest Experiences',
+                philosophy: 'In hospitality, design is your strongest business asset—it sets the mood, tells your brand story, and keeps customers coming back.',
+                approach: 'We blend experiential interior design with smart circulation planning to optimize guest flow, staff movement, and overall business profitability.',
+                scope: ['Master Planning for Hotels, Resorts, Cafes & Fine Dining Restaurants', 'Guest Flow, Zoning & Operations Circulation Planning', 'Commercial Kitchen Layouts & Service Area Coordinated Planning', 'Theme-Based Interior Concepts'],
+                process: ['Brand Concept & Feasibility Study', 'Zoning & Layout Planning', 'Experiential 3D Design', 'Specialized Execution Drawings']
+            }
+        };
+        const key = new URLSearchParams(window.location.search).get('service') || 'architectural-design';
+        const service = services[key] || services['architectural-design'];
+        document.title = service.title + ' - Yes Architect and Interiors';
+        document.getElementById('service-title').textContent = service.title;
+        document.getElementById('service-tagline').textContent = service.tagline;
+        document.getElementById('service-philosophy').textContent = service.philosophy;
+        document.getElementById('service-approach').textContent = service.approach;
+        document.getElementById('service-scope').innerHTML = service.scope.map(item => '<li>' + item + '</li>').join('');
+        document.getElementById('service-process').innerHTML = service.process.map(item => '<li>' + item + '</li>').join('');
+    </script>
+</body>
+</html>
